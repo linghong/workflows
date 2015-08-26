@@ -1,0 +1,9 @@
+{
+  "name": "workflows",
+  "version": "1.0.0",
+  "description": "a web project with Gulp.js, Browserify, and Scss",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  }
+}
