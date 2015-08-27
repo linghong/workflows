@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class ="header">
     <div class="container">
       <img class="logo" src="images/logo.png" alt="logo">
     </div><!-- container -->
@@ -14,19 +14,48 @@
  
   <section class="info">
     <div class="container">
-      <h1>Info Title</h1>
+      <h1>Artists of Contemporary Art </h1>
       <h2 class="tagline"></h2> 
-      <p>first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph first pargraph.</p>
+      <p>Listd are some contemporary artists.</p>
     </div><!-- container -->
   </section>
  
-  <section class="featured">
+  <section class="featuredartists">
     <div class="container">
-      <h1>Title</h1> 
-      <p>Second pargraph Second pargraph Second pargraph Second pargraph pargraph Second pargraph Second pargraph Second pargraph Second pargraph pargraph.</p>
-      <p>Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph Third pargraph.</p>   
+      <h1>Featured Artists</h1> 
+      <article class="artistlist rclick">
+        <article class="item">
+          <img src="images/artists/Barot_Bellingham_tn.jpg" alt="Photo of Barot Bellingham">
+          <h2>Barot Bellingham</h2>
+        </article>
+        <article class="item">
+          <img src="images/artists/Constance_Smith_tn.jpg" alt="Photo of Constance Smith">
+          <h2>Constance Smith</h2>
+        </article>
+        <article class="item">
+          <img src="images/artists/Hassum_Harrod_tn.jpg" alt="Photo of Hassum Harrod">
+          <h2>Hassum Harrod</h2>
+        </article>
+        <article class="item">
+          <img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Photo of Hillary Goldwynn">
+          <h2>Hillary Goldwynn</h2>
+        </article>
+        <article class="item">
+          <img src="images/artists/Xhou_Ta_tn.jpg" alt="Photo of Xhou Ta">
+          <h2>Xhou Ta</h2>
+        </article>
+      </article><!-- artistlist rclick -->   
     </div><!-- container -->
   </section>
+  <script id="artistinfo" type="text/template">
+    {{#artists}}
+      <div class="speaker">
+        <h2>{{name}}</h2>
+        <h3>{{reknown}}</h3>
+        <p><img src="images/artists/{{shortname}}_tn.jpg" alt="Photo of {{name}}" />{{bio}}</p>
+      </div>
+    {{/artists}}
+  </script>
   <footer>
     © 2015
   </footer>
