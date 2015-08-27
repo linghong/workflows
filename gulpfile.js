@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 var coffeeSource =['components/coffee/tagline.coffee'];
 var jsSource = [
 	'components/scripts/rclick.js',
+	'components/scripts/tagline.js',
 	'components/scripts/template.js'
 	];
 

@@ -34,13 +34,23 @@ var rclick = function() {
     }, false); // click event
   }
 }(); //anonymous closure
+var $, fill;
+
+$ = require('jquery');
+
+(fill = function(item) {
+  return $('.tagline').append("" + item);
+})('Some text here');
+
+fill;
+
 $(function() {
   var Mustache = require('mustache');
  
   $.getJSON('js/data.json', function(data) {
-    var template = $('#speakerstpl').html();
+    var template = $('#artistinfo').html();
     var html = Mustache.to_html(template, data);
-    $('#speakers').html(html);    
+    $('#artists').html(html);    
   }); //getJSON
   
 }); //function
