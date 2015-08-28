@@ -8,7 +8,7 @@
 <body>
   <header class ="header">
     <div class="container">
-      <img class="logo" src="images/logo.png" alt="logo">
+      <img class="logo" src="images/misc/logo.png" alt="logo">
     </div><!-- container -->
   </header>
  
@@ -16,7 +16,7 @@
     <div class="container">
       <h1>Artists of Contemporary Art </h1>
       <h2 class="tagline"></h2> 
-      <p>Listed are some contemporary artists.</p>
+      <p>Listed are featured contemporary artists at The Roux Academy 2013 Art Conference & Showcase.</p>
     </div><!-- container -->
   </section>
  
@@ -44,10 +44,17 @@
           <img src="images/artists/Xhou_Ta_tn.jpg" alt="Photo of Xhou Ta">
           <h2>Xhou Ta</h2>
         </article>
-      </article><!-- artistlist rclick -->   
+      </article><!-- artistlist rclick --> 
+      <p>The Roux Academy gets thousands of submissions every year for artists interesting in participating in the CAC exhibits, and selects approximately 200 distinct pieces of contemporary art for display in their collective exhibit. In addition, 12 individuals are honored as Featured Artists </p>  
     </div><!-- container -->
   </section>
-  <script id="artistinfo" type="text/template">
+  <section class="ontour">
+    <div class="container">
+      <article id="artists"></article>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+   <script id="artistinfo" type="text/template">
     {{#artists}}
       <div class="speaker">
         <h2>{{name}}</h2>
@@ -59,6 +66,6 @@
   <footer>
     © 2015
   </footer>
-  <script src="js/script.js"></script>
+
 </body>
 </html>
