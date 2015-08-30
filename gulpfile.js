@@ -20,7 +20,7 @@ gulp.task('coffee', function(){
 	gulp.src(coffeeSource)
 	.pipe(coffee({bare:true})
 		.on('error', gutil.log))
-	.pipe(gulp.dest('components/scripts'))
+	.pipe(gulp.dest('components/scripts'));
 });
 
 gulp.task('js', function(){
@@ -28,7 +28,7 @@ gulp.task('js', function(){
 	.pipe(concat('script.js'))
 	.pipe(browserify())
 	.pipe(gulp.dest('builds/development/js'))
-	.pipe(connect.reload())
+	.pipe(connect.reload());
 });
 
 gulp.task('compass', function(){
@@ -40,17 +40,17 @@ gulp.task('compass', function(){
 		})
 		.on('error', gutil.log))
 	.pipe(gulp.dest('builds/development/css'))
-	.pipe(connect.reload())
+	.pipe(connect.reload());
 });
 
 gulp.task('html', function(){
 	gulp.src(htmlSource)
-	.pipe(connect.reload())	
+	.pipe(connect.reload());	
 });
 
 gulp.task('json', function(){
 	gulp.src(jsonSource)
-	.pipe(connect.reload())	
+	.pipe(connect.reload());	
 });
 
 gulp.task('watch', function(){
@@ -65,7 +65,7 @@ gulp.task('connect', function(){
 	connect.server({
 		root: 'builds/development',
 		livereload : true
-	})
+	});
 });
 
 
